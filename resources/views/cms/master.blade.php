@@ -1,4 +1,5 @@
     @php
+        use Illuminate\Support\Facades\Storage;
         $lang = app()->getLocale() == 'ar' ? 'rtl' : 'ltr';
     @endphp
     <!DOCTYPE html>
@@ -133,7 +134,7 @@
                         <a href="#" class="p-1 navbar-nav-link align-items-center rounded-pill"
                             data-bs-toggle="dropdown">
                             <div class="status-indicator-container">
-                                <img src="{{ asset('storage/images/admin/' . Auth::user()->user->image) }}"
+                                <img src="{{ Storage::url('images/admin/' . Auth::user()->user->image) }}"
                                     class="w-32px h-32px rounded-pill" alt="">
                                 <span class="status-indicator bg-success"></span>
                             </div>

@@ -78,7 +78,7 @@
                 </div>
             </div>
         </div>
-        <img class="image-sub-page" src="{{ asset('storage/clients.jpg') }}">
+        <img class="image-sub-page" src="{{ Storage::url('clients.jpg') }}">
         <h1 class="title-page">{{ trans('front/index.عملاؤنا') }}</h1>
     </div>
 @endsection
@@ -90,7 +90,7 @@
             <div class="client-page">
                 @foreach ($our_clients as $client)
                     <div class="success-slide">
-                        <img src="{{ asset('storage/images/ourClient/' . $client->image) }}" alt="">
+                        <img src="{{ Storage::url('images/ourClient/' . $client->image) }}" alt="">
                     </div>
                 @endforeach
             </div>

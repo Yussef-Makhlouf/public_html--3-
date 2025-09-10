@@ -1,10 +1,14 @@
+@php
+use Illuminate\Support\Facades\Storage;
+@endphp
+
 @extends('frontend.master')
 @section('title', 'المنتجات')
 
 <!-- @section('styles')
     <style>
         .header.sub-product {
-            background-image: url({{ asset('storage/images/category/' . $category->image) }});
+            background-image: url({{ Storage::url('images/category/' . $category->image) }});
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center center;
@@ -115,7 +119,7 @@
             <div class="ser-slide content">
                 @foreach ($productsInCategory as $product)
                     <div class="ser-card swiper-slide">
-                        <img src="{{ asset('storage/images/product/' . $product->image) }}" alt="service">
+                        <img src="{{ Storage::url('images/product/' . $product->image) }}" alt="service">
                         <div class="ser-text">
                             <h2>
                                 {{ $product->trans_name }}
