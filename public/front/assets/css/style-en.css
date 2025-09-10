@@ -1,0 +1,99 @@
+/* Home Page */
+.selected-lang {
+   flex-direction: row-reverse;
+}
+
+.weather {
+   flex-direction: row;
+}
+
+.h-top .right a {
+   flex-direction: row;
+}
+
+.title-page {
+   left: 70px;
+}
+
+footer .top .container .subscribe input[type='email'] {
+   border-radius: 5px 0px 0px 5px;
+}
+
+footer .top .container .subscribe input[type='submit'] {
+   border-radius: 0px 5px 5px 0px;
+   right: 4px;
+}
+
+.lang-02 ul li a::before {
+   content: '';
+   display: inline-block;
+   width: 25px;
+   height: 18px;
+   background-image: url(../images/ar.svg);
+}
+
+.lang-02 ul li a::after {
+   content: '';
+   display: none;
+}
+
+/* About Page */
+.about-us .container .right .half {
+   width: 120px;
+   top: -65px;
+   right: -65px;
+}
+
+.about-us .container,
+.say .container {
+   flex-direction: row-reverse;
+}
+
+/* Product Details Page */
+.tool-d .para {
+   text-align: left;
+}
+
+/* Booking Page */
+.btn-sel-loc {
+   left: auto;
+   right: 20px;
+}
+
+@media screen and (max-width: 650px) {
+   .booking-page .btn-sel-loc {
+      left: auto;
+      right: 5px;
+   }
+}
+
+/* Blog Page */
+.side-content input[type='email'] {
+   border-radius: 5px 0px 0px 5px;
+}
+
+.side-content input[type='submit'] {
+   border-radius: 0px 5px 5px 0px;
+   right: 4px;
+}
+
+/* Blog Details Page */
+.content-area .swiper-button-next::before {
+   width: 120px;
+   content: 'Next Blog';
+   right: 0;
+   left: auto;
+}
+
+.content-area .swiper-button-prev::before {
+   content: 'Previous Blog';
+   left: 45px;
+}
+
+.header .nav-bar nav ul .submenu li:hover a {
+   padding-left: 10px;
+}
+
+.policy ul {
+   padding-left: 20px;
+}
